@@ -1,9 +1,10 @@
 #texto {
-  font-size: xx-large;
+  font-size: 200px;
+  
 }
 
 div {
-    animation: glitch 1s linear infinite;
+    animation: glitch 5s linear infinite;
 }
 
 @keyframes glitch{
@@ -16,6 +17,12 @@ div {
     62% {
         transform: translate(0, 0) skew(5deg);
     }
+    80% {
+        transform: translate(0, 0) skew(10deg);
+        -webkit-text-stroke: 1px red;
+        
+    }
+    
 }
 
 div:before,
